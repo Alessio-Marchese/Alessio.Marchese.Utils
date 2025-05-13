@@ -12,6 +12,8 @@
 		<Company>N/A</Company>
 		<Description>A library with reusable code for personal purpose open to anyone</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/Alessio-Marchese/AM.Utils</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
 
 		<PackageTags>utils;result;dotnet;library</PackageTags>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
