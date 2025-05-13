@@ -1,4 +1,4 @@
-﻿namespace AM.Utils.Core;
+﻿namespace Alessio.Marchese.Utils.Core;
 
 using System.Diagnostics.CodeAnalysis;
 public class Result<T>
