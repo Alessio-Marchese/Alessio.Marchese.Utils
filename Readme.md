@@ -1,1 +1,1 @@
-This is library with reusable code for personal purpose open to anyone
+This is a library with reusable code for personal purpose open to anyone

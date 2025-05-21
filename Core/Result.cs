@@ -48,5 +48,13 @@ public class Result
 
     public static Result Failure(string errorMessage) =>
         new(false, errorMessage);
+
+    public Result ToResult()
+    {
+        if (this.IsSuccessful)
+            throw new InvalidOperationException("ToResult Can only be used on a failed Result.");
+
+        return Result.Failure(this.ErrorMessage);
+    }
 }
 
