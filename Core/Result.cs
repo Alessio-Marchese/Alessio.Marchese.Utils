@@ -49,12 +49,12 @@ public class Result
     public static Result Failure(string errorMessage) =>
         new(false, errorMessage);
 
-    public Result ToResult()
+    public Result<T> ToResult<T>()
     {
         if (this.IsSuccessful)
-            throw new InvalidOperationException("ToResult Can only be used on a failed Result.");
+            throw new InvalidOperationException("ToResult<T> can only be used on a failed Result.");
 
-        return Result.Failure(this.ErrorMessage);
+        return Result<T>.Failure(this.ErrorMessage);
     }
 }
 
