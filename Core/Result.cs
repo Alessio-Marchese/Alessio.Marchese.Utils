@@ -29,6 +29,14 @@ public class Result<T>
 
         return Result<U>.Failure(this.ErrorMessage);
     }
+
+    public Result ToResult()
+    {
+        if (this.IsSuccessful)
+            throw new InvalidOperationException("ToResult<U> Can only be used on a failed Result.");
+
+        return Result.Failure(this.ErrorMessage);
+    }
 }
 
 public class Result
